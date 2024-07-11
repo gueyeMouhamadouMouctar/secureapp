@@ -21,3 +21,56 @@
 			
 		</div>
 	</nav>
+<!-- /* * {
+    margin: 0;
+    padding: O;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f5f7;
+}
+
+.navbar {
+    background: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-left a img {
+    width: 100px;
+}
+
+.navbar .navbar-center ul li {
+    padding: 6px 15px;
+    list-style: none;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.navbar .navbar-center ul li:hover {
+    
+    background: rgb(241, 192, 30);
+}
+
+.navbar .navbar-center ul li.active {    
+    background: rgb(241, 192, 30);
+}
+
+.navbar .navbar-center ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(29, 28, 31);
+
+    font-size: 16px;
+}
+
+
+.navbar .navbar-right .online img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+} -->

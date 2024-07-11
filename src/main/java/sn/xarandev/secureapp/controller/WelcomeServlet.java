@@ -22,7 +22,6 @@ public class WelcomeServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		String showForm = (String) req.getParameter("showForm");
-		System.err.println("vvvvvvvv         showForm =>  " + showForm);
 		
 		if (showForm == null)  {
 			
@@ -33,17 +32,13 @@ public class WelcomeServlet extends HttpServlet {
 			try {
 
 				int id = Integer.parseInt(req.getParameter("id"));
-				System.err.println("******************************   id =>  " + id);
-				// AccountUserDto accountUserDto = accountUserService.getAccount(id);
-				//System.out.println(accountUserDto);
-				
 				req.setAttribute("account", accountUserService.getAccount(id));
 				req.setAttribute("accounts", accountUserService.getAll());
 				req.setAttribute("showForm", showForm) ;
 				req.getRequestDispatcher("WEB-INF/jsp/welcome.jsp").forward(req, resp);
 				
 			} catch (Exception e) {
-				System.err.println("**********************Error for called funtion accountUserService.getAccount(0)");
+				System.err.println(e);
 			}
 		}
 		

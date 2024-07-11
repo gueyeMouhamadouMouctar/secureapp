@@ -117,7 +117,7 @@
 
 					<div class="inputBox">
 
-						<input type="submit" value="Login">
+						<input type="submit" value="Sign In">
 
 					</div>
 

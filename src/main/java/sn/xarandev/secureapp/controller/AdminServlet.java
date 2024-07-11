@@ -23,9 +23,6 @@ public class AdminServlet extends HttpServlet {
 
 		String action = req.getParameter("action");
 
-		System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-		System.out.println("action ================> " + action);
-		System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 		try {
 			//
 			switch (action) {
@@ -60,14 +57,10 @@ public class AdminServlet extends HttpServlet {
 		String lastname = req.getParameter("lastname") ;
 		String profil = req.getParameter("profil") ;
 		
-		System.out.println("id => " + id);
-		System.out.println("email => " + email);
-		System.out.println("password => " + password);
-		
 		AccountUserDto accountUserDto = new AccountUserDto(id, email, firstname, lastname, profil, password, true) ;
 
-		boolean result =  accountUserService.update(accountUserDto) ;
-		System.err.println("result  => " + result);
+		accountUserService.update(accountUserDto) ;
+		
 		req.setAttribute("showForm", null);
 		req.setAttribute("accounts", null);
 		req.setAttribute("accounts", accountUserService.getAll());
